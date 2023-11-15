@@ -6,10 +6,18 @@ const PizzaRoute = require ('./Routes/PizzaRoute')
 const CartRoute = require ('./Routes/CartRoute')
 const cookieParser = require('cookie-parser')
 const orderRoute=require('./Routes/OrderRoute')
+const fileUpload = require('express-fileupload')
 
 
 const app = express()
 connectDB()
+
+
+app.use(fileUpload({
+    useTempFiles : true,
+    
+}));
+
 
 
 

@@ -17,7 +17,7 @@ const PizzaSchema = new mongoose.Schema(
       default: 0,
     },
     image: {
-      type: String,
+      type: mongoose.Schema.Types.Mixed,
       
     },
   },
